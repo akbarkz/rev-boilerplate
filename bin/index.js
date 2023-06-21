@@ -9,12 +9,13 @@ if (args.length < 1) {
   process.exit(1);
 }
 
-const projectName = process.argv[0];
+const projectName = args[0];
 const currentPath = process.cwd();
 const projectPath = path.join(currentPath, projectName);
 const git_repo = 'git@github.com:akbarik/rev-boilerplate.git';
 
 try {
+  console.log(projectPath);
   fs.mkdirSync(projectPath);
 } catch (err) {
   if (err.code === 'EEXIST') {
