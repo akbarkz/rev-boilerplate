@@ -1,0 +1,22 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "react-app",
+    "plugin:prettier/recommended"
+  ],
+  "ignorePatterns": [
+    "node_modules",
+    ".git",
+    ".cache"
+  ],
+  "rules": {
+    "react-hooks/exhaustive-deps": 0,
+    "react/self-closing-comp": [
+      "error",
+      {
+        "component": true,
+        "html": true
+      }
+    ]
+  }
+}
