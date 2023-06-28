@@ -1,14 +1,6 @@
 {
-  "extends": [
-    "next/core-web-vitals",
-    "react-app",
-    "plugin:prettier/recommended"
-  ],
-  "ignorePatterns": [
-    "node_modules",
-    ".git",
-    ".cache"
-  ],
+  "extends": ["react-app", "plugin:prettier/recommended"],
+  "ignorePatterns": ["node_modules", ".git", ".cache"],
   "rules": {
     "react-hooks/exhaustive-deps": 0,
     "react/self-closing-comp": [
